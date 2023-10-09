@@ -1,9 +1,29 @@
-<!doctype html>
-<html>
- <head>
-   <title>Hello World</title>
- </head>
- <body>
-   <h1>Hello World</h1>
- </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Land</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav data-include="index.header-nav.partial.html"></nav>
+      <div data-include="index.header-banner.partial.html"></div>
+    </header>
+
+    <main>
+    <section data-include="index.best-products.partial.html"></section>
+    <section data-include="index.features.partial.html"></section>
+    <section data-include="index.fastest-way.partial.html"></section>
+    <section data-include="index.lightning-fast-prototyping.partial.html"></section>
+    <section data-include="index.partners.partial.html"></section>
+    <section data-include="index.testimonials.partial.html"></section>
+    <section data-include="index.pricing.partial.html"></section>
+    <section data-include="index.contact-us.partial.html"></section>
+    </main>
+
+    <footer data-include="index.footer.partial.html"></footer>
+
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+  </body>
 </html>
