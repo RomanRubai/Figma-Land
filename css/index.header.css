@@ -1,0 +1,13 @@
+.header {
+
+}
+
+.header__background {
+    max-width: 100%;
+    background-image: url("../img/background-image.png");
+    background-size: cover;
+}
+
+.header__nav-links {
+    display: flex;
+}
