@@ -6,6 +6,10 @@
     background-size: cover;
 }
 
+.header__nav-links {
+    display: none;
+}
+
 .header__image {
     display: flex;
 }
@@ -15,12 +19,40 @@
     height: 58px;
 }
 
+.header__social-media {
+    display: none;
+}
+
 .header-banner {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .header-banner__title {
-    color:
+    color: white;
     text-align: center;
+}
+
+@media (min-width: 700px) {
+    .header {
+        display: block;
+    }
+
+    .header__nav-box {
+        display: flex;
+    }
+
+    .header__nav {
+        display: flex;
+    }
+
+    .header__nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header__social-media {
+        display: flex;
+        flex-direction: row;
+    }
 }
