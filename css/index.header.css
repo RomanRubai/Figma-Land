@@ -4,6 +4,7 @@
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 847px;
 }
 
 .header__nav-links {
