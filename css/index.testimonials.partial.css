@@ -22,7 +22,8 @@
     align-items: center;
 }
 
-.testimonials__user-image {
+.testimonials__user-image-woman,
+.testimonials__user-image-man {
     height: 50px;
     width: 50px;
 }
@@ -44,4 +45,18 @@
     text-decoration: none;
     color: #FFF;
     font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .testimonials__user-image-man {
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .testimonials__user-image-woman {
+        visibility: hidden;
+        height: 0;
+    }
 }
