@@ -1,0 +1,80 @@
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contact-us__social-media {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-us__social-media-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us__social-media-icon {
+    width: 41px;
+    height: 41px;
+}
+
+.contact-us__map {
+    display: none;
+}
+
+.contact-us__address-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-us__address-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us__address-description {
+    color: var(--second-text, #374754);
+    text-align: center;
+    font-family: Graphik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    display: flex;
+}
+
+.contact-us__address-icon {
+    width: 26px;
+    height: 32px;
+}
+
+@media (min-width: 768px) {
+    .contact-us {
+        display: flex;
+    }
+
+    .contact-us__address {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .contact-us__address-info {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contact-us__map {
+        display: flex;
+    }
+
+    .contacts__map-address {
+        height: 323px;
+        max-width: 516px;
+        width: 100%;
+    }
+}
