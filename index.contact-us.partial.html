@@ -1,6 +1,7 @@
 <section class="contact-us container" id="contact">
     <h2 class="contact-us__title">Contact Us</h2>
-    <p class="contact-us__description">Most calendars are designed for teams. Slate is designed for freelancers</p>
+    <p class="contact-us__description-first">Most calendars are designed for teams.</p>
+    <p class="contact-us__description-second">Most calendars are designed for teams. Slate is designed for freelancers</p>
     <div class="contact-us__address">
         <address class="contact-us__address-info">
             <ul class="contact-us__social-media">
@@ -30,16 +31,16 @@
               </div>
             <ul class="contact-us__address-list">
                 <li class="contact-us__address-item">
-                    <img class="contact-us__address-icon" src="img/address-logo.png" alt="Address logo">
+                    <img class="contact-us__address-icon-first" src="img/address-logo.png" alt="Address logo">
                     <p class="contact-us__address-description">6386 Spring St undefined Anchorage, Georgia 12473 United
                         States</p>
                 </li>
                 <li class="contact-us__address-item">
-                    <img class="contact-us__address-icon" src="img/cellphone-logo.png" alt="Cellphone logo">
+                    <img class="contact-us__address-icon-second" src="img/cellphone-logo.png" alt="Cellphone logo">
                     <a class="contact-us__address-description" href="tel:843555-0130">(843) 555-0130</a>
                 </li>
                 <li class="contact-us__address-item">
-                    <img class="contact-us__address-icon" src="img/letter-logo.png" alt="Letter logo">
+                    <img class="contact-us__address-icon-third" src="img/letter-logo.png" alt="Letter logo">
                     <a class="contact-us__address-description" href="mail.to:willie.jennings@example.com">willie.jennings@example.com</a>
                 </li>
             </ul>
@@ -48,10 +49,10 @@
             <form class="contact-us__form" action="/submit" method="post" id="form">
                 <h3 class="contact-us__form-title">Contact Us</h3>
                 <div class="contact-us__form-elements">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="text" name="message" placeholder="Your Message" required>
-                    <button type="submit">Send</button>
+                    <input class="contact-us__form-element" type="text" name="name" placeholder="Your Name" required>
+                    <input class="contact-us__form-element" type="email" name="email" placeholder="Your Email" required>
+                    <input class="contact-us__form-message" type="text" name="message" placeholder="Your Message" required>
+                    <button class="contact-us__btn" type="submit">Send</button>
                 </div>
             </form>
         </div>
