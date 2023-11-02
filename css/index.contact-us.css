@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 20px;
+    margin-bottom: 150px;
 }
 
 .contact-us__title {
@@ -98,7 +99,7 @@
 .contact-us__form {
     display: flex;
     flex-direction: column;
-    padding: 52px 49px;
+    padding: 52px 20px;
     align-self: stretch;
     border-radius: 20px;
     border: 1px solid #DDD;
@@ -237,6 +238,14 @@
         border: none;
     }
 
+    .contact-us__address-info {
+        margin-bottom: 0;
+    }
+
+    .contact-us__social-media {
+        margin-bottom: 0;
+    }
+
     .contact-us__address-list {
         display: flex;
         flex-direction: row;
@@ -260,6 +269,7 @@
         max-width: 453px;
         width: 100%;
         max-height: 669px;
+        padding: 52px 49px;
     }
 
     .contact-us__form-element {

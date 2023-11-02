@@ -1,0 +1,138 @@
+.footer {
+    background-color: #252B42;
+    color: var(--Light-text, #FFF);
+    padding-top: 120px;
+    padding-bottom: 120px;
+    max-width: 100%;
+}
+
+.footer__lists {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+}
+
+.footer__list-title {
+    font-family: Graphik, Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    margin-bottom: 25px;
+}
+
+.footer__list-links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 58px;
+    list-style-type: none;
+}
+
+.footer__list-link {
+    display: flex;
+    flex-direction: column;
+    color: var(--Light-text, #FFF);
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+.footer__address-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.footer__address-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__address-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.footer__address-icon-first {
+    width: 46px;
+    height: 46px;
+}
+
+.footer__address-icon-second {
+    width: 35px;
+    height: 35px;
+}
+
+.footer__map,
+.footer__tel {
+    font-family: Graphik, Arial, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+}
+
+.footer__tel {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--Light-text, #FFF);
+}
+
+.footer__social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
+.footer__social-media-link {
+    list-style-type: none;
+}
+
+.footer__social-media-icon {
+    width: 41px;
+    height: 41px;
+}
+
+@media (min-width: 935px){
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 150px;
+        padding-bottom: 125px;
+        gap: 184px;
+    }
+
+    .footer__lists {
+        display: flex;
+        flex-direction: row;
+        gap: 86px;
+    }
+
+    .footer__list-links,
+    .footer__list-title {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .footer__list-links {
+        margin-bottom: 0;
+    }
+
+    .footer__social-media {
+        justify-content: flex-start;
+    }
+}
