@@ -51,11 +51,16 @@
     max-width: 300px;
     max-height: 607px;
     margin-bottom: 50px;
+    color: var(--text, #252B42);
+}
+
+.pricing__card:hover {
+    background: var(--Primary, #2091F9);
+    color: var(--light-background, #FFF);
 }
 
 .pricing__card-title,
 .pricing__card-title-blue {
-    color: var(--text, #252B42);
     font-family: Graphik, Arial, sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -67,7 +72,6 @@
 
 .pricing__card-description,
 .pricing__card-description-blue {
-    color: var(--second-text, #374754);
     font-family: Graphik, Arial, sans-serif;
     text-align: center;
     font-size: 16px;
@@ -90,7 +94,6 @@
 
 .pricing__card-price,
 .pricing__card-price-blue {
-    color: var(--text, #252B42);
     font-family: Graphik, Arial, sans-serif;
     font-size: 74px;
     font-style: normal;
@@ -99,11 +102,9 @@
     letter-spacing: 0.2px;
 }
 
-.pricing__card-currency,
-.pricing__card-currency-blue {
+.pricing__card-currency {
     display: flex;
     flex-direction: column;
-    color: var(--text, #252B42);
     font-family: Graphik, Arial, sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -115,7 +116,6 @@
 
 .pricing__card-time,
 .pricing__card-time-blue {
-    color: var(--second-text, #374754);
     font-family: Graphik, Arial, sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -132,7 +132,6 @@
 .pricing__card-text,
 .pricing__card-text-blue {
     margin-bottom: 20px;
-    color: var(--text, #252B42);
     font-family: Graphik, Arial, sans-serif;
     font-size: 15px;
     font-style: normal;
@@ -152,15 +151,14 @@
     background: var(--Primary, #2091F9);
     box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
     margin-bottom: 50px;
+    transition:  background-color .2s ease-in-out;
+    color: var(--Light-text, #FFF);
 }
 
-.pricing__card-title-blue,
-.pricing__card-description-blue,
-.pricing__card-price-blue,
-.pricing__card-currency-blue,
-.pricing__card-time-blue, 
-.pricing__card-text-blue {
-    color: var(--Light-text, #FFF);
+.pricing__card-blue:hover {
+    background: var(--Primary, #FFF);
+    color: var(--Primary, #2091F9);
+    border: 2px solid var(--Primary, #2091F9);
 }
 
 .pricing__button,
@@ -178,15 +176,31 @@
     flex-direction: column;
     align-items: center;
     border-radius: 35px;
+    border: 2px solid var(--Primary, #2091F9);
     background: var(--Primary, #2091F9);
     text-decoration: none;
     color: #FFF;
     font-weight: bold;
+    transition:  background-color .2s ease-in-out;
 }
 
 .pricing__button-btn-blue {
+    border: 2px solid var(--Light-text, #FFF);
     background: var(--Light-text, #FFF);
     color: var(--Primary, #2091F9);
+    transition:  background-color .2s ease-in-out;
+}
+
+.pricing__card:hover .pricing__button-btn {
+    background: var(--Primary, #FFF);
+    color: var(--Primary, #2091F9);
+    border: 2px solid var(--Primary, #FFF);
+}
+
+.pricing__card-blue:hover .pricing__button-btn-blue {
+    background: var(--Primary, #2091F9);
+    color: var(--Primary, #FFF);
+    border: 2px solid var(--Primary, #2091F9);
 }
 
 @media (max-width: 767px) {
