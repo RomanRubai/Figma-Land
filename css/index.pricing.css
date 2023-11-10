@@ -57,6 +57,9 @@
 .pricing__card:hover {
     background: var(--Primary, #2091F9);
     color: var(--light-background, #FFF);
+    transform: scale(1, 1.04);
+    transition-duration: 300ms;
+    border: 5px solid;
 }
 
 .pricing__card-title,
@@ -151,14 +154,15 @@
     background: var(--Primary, #2091F9);
     box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
     margin-bottom: 50px;
-    transition:  background-color .2s ease-in-out;
     color: var(--Light-text, #FFF);
 }
 
 .pricing__card-blue:hover {
     background: var(--Primary, #FFF);
-    color: var(--Primary, #2091F9);
-    border: 2px solid var(--Primary, #2091F9);
+    color: var(--text, #252B42);
+    border: 5px solid var(--Primary, #2090f9);
+    transform: scale(1, 1.04);
+    transition-duration: 300ms;
 }
 
 .pricing__button,
@@ -181,14 +185,14 @@
     text-decoration: none;
     color: #FFF;
     font-weight: bold;
-    transition:  background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
 }
 
 .pricing__button-btn-blue {
     border: 2px solid var(--Light-text, #FFF);
     background: var(--Light-text, #FFF);
     color: var(--Primary, #2091F9);
-    transition:  background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
 }
 
 .pricing__card:hover .pricing__button-btn {
